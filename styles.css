@@ -63,15 +63,12 @@ border: 1px solid #3e4943;
 }
 /* The table for Stats */
 
-
-
 /* The Pokemon */
-#types{
+.type {
   margin-top: 34px;
   margin-left: 3px;
   border-radius: 3px;
   font-weight: bold;
-
 }
 
 .normal {
@@ -145,4 +142,5 @@ border: 1px solid #3e4943;
 .fairy {
   background-color: #ed99ed;
 }
+
 /* The type for labels */

@@ -6,7 +6,7 @@ const types = document.getElementById('types');
 const height = document.getElementById('height');
 const weight = document.getElementById('weight');
 
-const imageF = document.getElementById('sprite');
+const imageF = document.getElementById('sprite-container');
 const imageB = document.getElementById('imageB');
 
 const hp = document.getElementById('hp');
@@ -50,7 +50,7 @@ const fetchData = async (nameOrId) => {
      <img id="imageB" src="${data.sprites.back_default}" alt="${data.id} back"> `;
 
       types.innerHTML = data.types
-      .map(obj => `<span class="type ${obj.type.name.toUpperCase()}">${obj.type.name.toUpperCase()}</span>`)
+      .map(obj => `<span class="type ${obj.type.name.toLowerCase()}">${obj.type.name.toUpperCase()}</span>`)
       .join('');
 
       //tableStats
